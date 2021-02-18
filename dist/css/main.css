@@ -1,3 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600;700;800&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 /* 
 ==============================================
 CONTENT:	Project Name Here
@@ -20,93 +156,177 @@ If you want to add partials, use Sass Modules via @use:
 Usage: partial-name.variable/mixin/function-name:
 background: variables.$primary-color;
 */
-@use 'reset';
 /* 1. Main Layout ================================= */
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	background: #2e3032;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 20% 20% 20% 20% 10%;
+  grid-template-columns: 10% 20% 20% 20% 20% 10%;
+  -ms-grid-rows: (20%)[5];
+  grid-template-rows: repeat(5, 20%);
+}
+
+body > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+body > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+
+body > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+body > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+}
+
+body > *:nth-child(5) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+
+body > *:nth-child(6) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 6;
+}
+
+body > *:nth-child(7) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+
+body > *:nth-child(8) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+}
+
+body > *:nth-child(9) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+}
+
+body > *:nth-child(10) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+}
+
+body > *:nth-child(11) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 5;
+}
+
+body > *:nth-child(12) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 6;
+}
+
+body > *:nth-child(13) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+
+body > *:nth-child(14) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+}
+
+body > *:nth-child(15) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+
+body > *:nth-child(16) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+}
+
+body > *:nth-child(17) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+}
+
+body > *:nth-child(18) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 6;
+}
+
+body > *:nth-child(19) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+}
+
+body > *:nth-child(20) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+}
+
+body > *:nth-child(21) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+}
+
+body > *:nth-child(22) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+}
+
+body > *:nth-child(23) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 5;
+}
+
+body > *:nth-child(24) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 6;
+}
+
+body > *:nth-child(25) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+}
+
+body > *:nth-child(26) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+}
+
+body > *:nth-child(27) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+}
+
+body > *:nth-child(28) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 4;
+}
+
+body > *:nth-child(29) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
+}
+
+body > *:nth-child(30) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 6;
+}
+body .grid-container {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1/6;
+  background: white;
+  margin-top: 10px;
+  margin: 0 auto;
 }
 
 /* 2. Content ================================= */
-.floating-box {
-	position: relative;
-	font-family: sans-serif;
-	width: 90%;
-	max-width: 500px;
-	margin: 140px auto;
-	padding: 30px 20px 30px 30px;
-}
-
-.floating-box .foreground {
-	position: relative;
-	z-index: 2;
-	transform: translateZ(100px);
-}
-
-.floating-box .background {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	top: 0;
-	background: white;
-	z-index: 1;
-	transition: 0.2s;
-	transform: translateX(20px) perspective(600px) rotateY(15deg);
-}
-
-.floating-box:hover .background {
-	transform: translateX(-30px) perspective(600px) rotateY(-15deg);
-}
-
-.floating-box .logo {
-	position: absolute;
-	top: -30px;
-	width: 60px;
-	z-index: 2;
-	transform: translateZ(100px);
-	transition: 0.3s;
-}
-
-.floating-box .logo:hover {
-	-ms-transform: rotate(-0.4turn);
-	    transform: rotate(-0.4turn);
-}
-
-.floating-box h1 {
-	font-weight: 700;
-	font-size: 22pt;
-	margin: 15px 0;
-}
-
-.floating-box p {
-	color: #777;
-	line-height: 140%;
-}
-
-.floating-box p.github {
-	font-size: 0.8em;
-}
-
-.floating-box p.github a {
-	opacity: 0.2;
-	transition: 0.3s;
-}
-
-.floating-box p.github a:hover {
-	opacity: 1;
-	color: red;
-}
-
-.floating-box code {
-	position: absolute;
-	top: 20px;
-	right: 20px;
-	font-size: 0.8em;
-	opacity: 0.2;
-}
-
 /*# sourceMappingURL=main.css.map */
