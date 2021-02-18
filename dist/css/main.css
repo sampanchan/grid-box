@@ -157,385 +157,69 @@ Usage: partial-name.variable/mixin/function-name:
 background: variables.$primary-color;
 */
 /* 1. Main Layout ================================= */
-* {
-  box-sizing: border-box;
-}
-
 body {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 10% 20% 20% 20% 20% 10%;
-  grid-template-columns: 10% 20% 20% 20% 20% 10%;
-  -ms-grid-rows: 10% 10% 8% 8% 15% 25% 10% 10% 8% 20% 20% 20%;
-  grid-template-rows: 10% 10% 8% 8% 15% 25% 10% 10% 8% 20% 20% 20%;
+  -ms-grid-columns: (1fr)[12];
+  grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
 }
-
 body > *:nth-child(1) {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
 }
-
 body > *:nth-child(2) {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
 }
-
 body > *:nth-child(3) {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
 }
-
 body > *:nth-child(4) {
   -ms-grid-row: 1;
   -ms-grid-column: 4;
 }
-
 body > *:nth-child(5) {
   -ms-grid-row: 1;
   -ms-grid-column: 5;
 }
-
 body > *:nth-child(6) {
   -ms-grid-row: 1;
   -ms-grid-column: 6;
 }
-
 body > *:nth-child(7) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
 }
-
 body > *:nth-child(8) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 8;
 }
-
 body > *:nth-child(9) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
+  -ms-grid-row: 1;
+  -ms-grid-column: 9;
 }
-
 body > *:nth-child(10) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 4;
+  -ms-grid-row: 1;
+  -ms-grid-column: 10;
 }
-
 body > *:nth-child(11) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 5;
+  -ms-grid-row: 1;
+  -ms-grid-column: 11;
 }
-
 body > *:nth-child(12) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 6;
+  -ms-grid-row: 1;
+  -ms-grid-column: 12;
 }
-
-body > *:nth-child(13) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-}
-
-body > *:nth-child(14) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-}
-
-body > *:nth-child(15) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-}
-
-body > *:nth-child(16) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 4;
-}
-
-body > *:nth-child(17) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 5;
-}
-
-body > *:nth-child(18) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 6;
-}
-
-body > *:nth-child(19) {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-}
-
-body > *:nth-child(20) {
-  -ms-grid-row: 4;
-  -ms-grid-column: 2;
-}
-
-body > *:nth-child(21) {
-  -ms-grid-row: 4;
-  -ms-grid-column: 3;
-}
-
-body > *:nth-child(22) {
-  -ms-grid-row: 4;
-  -ms-grid-column: 4;
-}
-
-body > *:nth-child(23) {
-  -ms-grid-row: 4;
-  -ms-grid-column: 5;
-}
-
-body > *:nth-child(24) {
-  -ms-grid-row: 4;
-  -ms-grid-column: 6;
-}
-
-body > *:nth-child(25) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-}
-
-body > *:nth-child(26) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 2;
-}
-
-body > *:nth-child(27) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 3;
-}
-
-body > *:nth-child(28) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 4;
-}
-
-body > *:nth-child(29) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 5;
-}
-
-body > *:nth-child(30) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 6;
-}
-
-body > *:nth-child(31) {
-  -ms-grid-row: 6;
-  -ms-grid-column: 1;
-}
-
-body > *:nth-child(32) {
-  -ms-grid-row: 6;
-  -ms-grid-column: 2;
-}
-
-body > *:nth-child(33) {
-  -ms-grid-row: 6;
-  -ms-grid-column: 3;
-}
-
-body > *:nth-child(34) {
-  -ms-grid-row: 6;
-  -ms-grid-column: 4;
-}
-
-body > *:nth-child(35) {
-  -ms-grid-row: 6;
-  -ms-grid-column: 5;
-}
-
-body > *:nth-child(36) {
-  -ms-grid-row: 6;
-  -ms-grid-column: 6;
-}
-
-body > *:nth-child(37) {
-  -ms-grid-row: 7;
-  -ms-grid-column: 1;
-}
-
-body > *:nth-child(38) {
-  -ms-grid-row: 7;
-  -ms-grid-column: 2;
-}
-
-body > *:nth-child(39) {
-  -ms-grid-row: 7;
-  -ms-grid-column: 3;
-}
-
-body > *:nth-child(40) {
-  -ms-grid-row: 7;
-  -ms-grid-column: 4;
-}
-
-body > *:nth-child(41) {
-  -ms-grid-row: 7;
-  -ms-grid-column: 5;
-}
-
-body > *:nth-child(42) {
-  -ms-grid-row: 7;
-  -ms-grid-column: 6;
-}
-
-body > *:nth-child(43) {
-  -ms-grid-row: 8;
-  -ms-grid-column: 1;
-}
-
-body > *:nth-child(44) {
-  -ms-grid-row: 8;
-  -ms-grid-column: 2;
-}
-
-body > *:nth-child(45) {
-  -ms-grid-row: 8;
-  -ms-grid-column: 3;
-}
-
-body > *:nth-child(46) {
-  -ms-grid-row: 8;
-  -ms-grid-column: 4;
-}
-
-body > *:nth-child(47) {
-  -ms-grid-row: 8;
-  -ms-grid-column: 5;
-}
-
-body > *:nth-child(48) {
-  -ms-grid-row: 8;
-  -ms-grid-column: 6;
-}
-
-body > *:nth-child(49) {
-  -ms-grid-row: 9;
-  -ms-grid-column: 1;
-}
-
-body > *:nth-child(50) {
-  -ms-grid-row: 9;
-  -ms-grid-column: 2;
-}
-
-body > *:nth-child(51) {
-  -ms-grid-row: 9;
-  -ms-grid-column: 3;
-}
-
-body > *:nth-child(52) {
-  -ms-grid-row: 9;
-  -ms-grid-column: 4;
-}
-
-body > *:nth-child(53) {
-  -ms-grid-row: 9;
-  -ms-grid-column: 5;
-}
-
-body > *:nth-child(54) {
-  -ms-grid-row: 9;
-  -ms-grid-column: 6;
-}
-
-body > *:nth-child(55) {
-  -ms-grid-row: 10;
-  -ms-grid-column: 1;
-}
-
-body > *:nth-child(56) {
-  -ms-grid-row: 10;
-  -ms-grid-column: 2;
-}
-
-body > *:nth-child(57) {
-  -ms-grid-row: 10;
-  -ms-grid-column: 3;
-}
-
-body > *:nth-child(58) {
-  -ms-grid-row: 10;
-  -ms-grid-column: 4;
-}
-
-body > *:nth-child(59) {
-  -ms-grid-row: 10;
-  -ms-grid-column: 5;
-}
-
-body > *:nth-child(60) {
-  -ms-grid-row: 10;
-  -ms-grid-column: 6;
-}
-
-body > *:nth-child(61) {
-  -ms-grid-row: 11;
-  -ms-grid-column: 1;
-}
-
-body > *:nth-child(62) {
-  -ms-grid-row: 11;
-  -ms-grid-column: 2;
-}
-
-body > *:nth-child(63) {
-  -ms-grid-row: 11;
-  -ms-grid-column: 3;
-}
-
-body > *:nth-child(64) {
-  -ms-grid-row: 11;
-  -ms-grid-column: 4;
-}
-
-body > *:nth-child(65) {
-  -ms-grid-row: 11;
-  -ms-grid-column: 5;
-}
-
-body > *:nth-child(66) {
-  -ms-grid-row: 11;
-  -ms-grid-column: 6;
-}
-
-body > *:nth-child(67) {
-  -ms-grid-row: 12;
-  -ms-grid-column: 1;
-}
-
-body > *:nth-child(68) {
-  -ms-grid-row: 12;
-  -ms-grid-column: 2;
-}
-
-body > *:nth-child(69) {
-  -ms-grid-row: 12;
-  -ms-grid-column: 3;
-}
-
-body > *:nth-child(70) {
-  -ms-grid-row: 12;
-  -ms-grid-column: 4;
-}
-
-body > *:nth-child(71) {
-  -ms-grid-row: 12;
-  -ms-grid-column: 5;
-}
-
-body > *:nth-child(72) {
-  -ms-grid-row: 12;
-  -ms-grid-column: 6;
+@media screen and (min-width: 600px) {
+  body {
+    -ms-grid-rows: (1fr)[3];
+    grid-template-rows: repeat(3, 1fr);
+  }
 }
 body .grid-container {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  grid-column: 1/7;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 4;
-  grid-row: 1/5;
   background: white;
   margin-top: 10px;
   margin: 0 auto;
@@ -544,6 +228,11 @@ body .grid-container .grid-box-one {
   margin: 15px;
 }
 body .grid-container .grid-box-one .grid-box-one-header, body .grid-container .grid-box-one .grid-box-one-para {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  -ms-grid-row: 1;
+  grid-row: 1;
   font-family: "Abril Fatface", cursive;
   color: #48556A;
   font-size: 26px;
